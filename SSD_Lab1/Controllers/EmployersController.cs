@@ -16,11 +16,11 @@ using SSD_Lab1.Models;
 namespace SSD_Lab1.Controllers
 {
     [Authorize(Roles = "Manager, Employee")]
-    public class EmployeesController : Controller
+    public class EmployersController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public EmployeesController(ApplicationDbContext context)
+        public EmployersController(ApplicationDbContext context)
         {
             _context = context;
         }
