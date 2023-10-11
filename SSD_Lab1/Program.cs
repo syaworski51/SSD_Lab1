@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SSD_Lab1.Data;
 using SSD_Lab1.Models;
+using Azure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 

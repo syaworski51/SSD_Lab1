@@ -1,7 +1,13 @@
 {
   "dependencies": {
-    "mssql1": {
+    "secrets1": {
       "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/SSDLab1vault",
+      "type": "secrets.keyVault",
+      "connectionId": "SSDLab1Vault"
+    },
+    "mssql1": {
+      "secretStore": "AzureKeyVault",
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ssd-lab2dbserver/databases/SSD_Lab2_db",
       "type": "mssql.azure",
       "connectionId": "ConnectionStrings:DefaultConnection"
